@@ -16,4 +16,11 @@ Caso de Teste 02: Pesquisar produto nao existente
     Clicar no botão pesquisar
     Conferir mensagem de erro "No results were found for your search "itemNãoExistente""
 
+Caso de Teste 03: Adicionar produto no carrinho
+    Acessar a pagina home do site
+    Digitar o nome do produto "Blouse" no campo de Pesquisa
+    Clicar no botão pesquisar
+    Clicar na imagem do produto
+    Clicar no botão "Add to cart"
+    Clicar no botão "Proceed to checkout"
 # ***Keywords***
