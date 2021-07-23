@@ -44,3 +44,7 @@ Clicar no botão "Add to cart"
 Clicar no botão "Proceed to checkout"
     Wait Until Element Is Visible      xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a
     Click Element                      xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a
+
+Clicar no botão "Remover"
+    Wait Until Element Is Visible      xpath=//*[@id="2_7_0_0"]
+    Click Element                      xpath=//*[@id="2_7_0_0"]

@@ -1,7 +1,7 @@
 ***Settings***
 Resource            ../resource/Resource.robot
 Test Setup          Abrir navegador
-Test Teardown       Fechar navegador
+#Test Teardown       Fechar navegador
 
 ***Test Cases***
 Caso de Teste 01: Pesquisar produto existente
@@ -23,4 +23,13 @@ Caso de Teste 03: Adicionar produto no carrinho
     Clicar na imagem do produto
     Clicar no botão "Add to cart"
     Clicar no botão "Proceed to checkout"
+
+Caso de Teste 04: Remover produto no carrinho
+    Acessar a pagina home do site
+    Digitar o nome do produto "Blouse" no campo de Pesquisa
+    Clicar no botão pesquisar
+    Clicar na imagem do produto
+    Clicar no botão "Add to cart"
+    Clicar no botão "Proceed to checkout"
+    Clicar no botão "Remover"
 # ***Keywords***
