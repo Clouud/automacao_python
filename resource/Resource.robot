@@ -48,3 +48,23 @@ Clicar no botão "Proceed to checkout"
 Clicar no botão "Remover"
     Wait Until Element Is Visible      xpath=//*[@id="2_7_0_0"]
     Click Element                      xpath=//*[@id="2_7_0_0"]
+
+Clicar no bot ao "Sign in"
+    Wait Until Element Is Visible       xpath=//*[@id="header"]/div[2]/div/div/nav/div[1]/a
+    Click Element                       xpath=//*[@id="header"]/div[2]/div/div/nav/div[1]/a
+
+
+Preencher e-mail "${E-mail}"
+    Input Text         id=email_create       ${E-mail}
+                    
+
+Clicar no botao "Create an account"
+    Click Element      id=SubmitCreate
+
+
+#Preencher os campos do cadastro
+
+
+
+
+#Clicar em "Register" para finalizar o cadastro

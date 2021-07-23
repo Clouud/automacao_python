@@ -32,4 +32,13 @@ Caso de Teste 04: Remover produto no carrinho
     Clicar no botão "Add to cart"
     Clicar no botão "Proceed to checkout"
     Clicar no botão "Remover"
+
+Caso de Teste 05: Adicionar cliente
+    Acessar a pagina home do site
+    Clicar no bot ao "Sign in"
+    Preencher e-mail "testeqaxpto@gmail.com"
+    Clicar no botao "Create an account"
+    #Preencher os campos do cadastro
+    #Clicar em "Register" para finalizar o cadastro
+
 # ***Keywords***
