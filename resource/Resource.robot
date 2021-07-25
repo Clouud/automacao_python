@@ -62,9 +62,17 @@ Clicar no botao "Create an account"
     Click Element      id=SubmitCreate
 
 
-#Preencher os campos do cadastro
-
-
-
+Preencher os campos do cadastro com Mr., Gabriel, Oliveira Garcês, testeqaxpto@gmail.com, 123456, 7, 01, 1991       
+    Wait Until Element Is Visible       id=account-creation_form
+    Click Element                       id=id_gender1                   
+    Input Text                          id=customer_firstname          GABRIEL
+    Input Text                          id=customer_lastname           OLIVEIRA GARCÊS
+    Input Text                          id=passwd                      123456
+    Click Element                       id=uniform-days                
+    Select All From List                xpath=//*[@id="days"]/option[8]
+    #Click Element                       id=uniform-months   
+    #Input Text                          id=months                       01 
+   # Click Element                       id=uniform-years
+    #Input Text                          id=years                        1991
 
 #Clicar em "Register" para finalizar o cadastro

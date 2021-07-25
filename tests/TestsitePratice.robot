@@ -38,7 +38,7 @@ Caso de Teste 05: Adicionar cliente
     Clicar no bot ao "Sign in"
     Preencher e-mail "testeqaxpto@gmail.com"
     Clicar no botao "Create an account"
-    #Preencher os campos do cadastro
+    Preencher os campos do cadastro com Mr., Gabriel, Oliveira Garcês, testeqaxpto@gmail.com, 123456, 7, 01, 1991
     #Clicar em "Register" para finalizar o cadastro
 
 # ***Keywords***
