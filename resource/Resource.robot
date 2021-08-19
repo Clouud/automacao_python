@@ -55,8 +55,10 @@ Clicar no bot ao "Sign in"
     Click Element                       xpath=//*[@id="header"]/div[2]/div/div/nav/div[1]/a
 
 
-Preencher e-mail "${E-mail}"
-    Input Text         id=email_create       ${E-mail}
+Informe um e-mail valido
+    Wait Until Element Is Visible       id=email_create
+    ${EMAIL}                            Generate Random String
+    Input Text                          id=email_create       ${E-mail}@testexpto.com
                     
 
 Clicar no botao "Create an account"

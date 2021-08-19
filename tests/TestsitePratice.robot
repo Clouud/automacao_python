@@ -36,7 +36,7 @@ Caso de Teste 04: Remover produto no carrinho
 Caso de Teste 05: Adicionar cliente
     Acessar a pagina home do site
     Clicar no bot ao "Sign in"
-    Preencher e-mail "testeqaxpto@gmail.com"
+    Informe um e-mail valido
     Clicar no botao "Create an account"
     Preencher os campos de dados pessoais: "Gabriel", "Oliveira Garcês", "12356"
     Preencher os campos do endereco: "Rua Jose Correia Gonçalvez", "Suzano", "Arizona", "32420", "United States", "91131-7035"
