@@ -44,3 +44,43 @@ Clicar no botão "Add to cart"
 Clicar no botão "Proceed to checkout"
     Wait Until Element Is Visible      xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a
     Click Element                      xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a
+
+Clicar no botão "Remover"
+    Wait Until Element Is Visible      xpath=//*[@id="2_7_0_0"]
+    Click Element                      xpath=//*[@id="2_7_0_0"]
+
+###Cadastro de cliente
+Clicar no bot ao "Sign in"
+    Wait Until Element Is Visible       xpath=//*[@id="header"]/div[2]/div/div/nav/div[1]/a
+    Click Element                       xpath=//*[@id="header"]/div[2]/div/div/nav/div[1]/a
+
+
+Informe um e-mail valido
+    Wait Until Element Is Visible       id=email_create
+    ${EMAIL}                            Generate Random String
+    Input Text                          id=email_create       ${E-mail}@testexpto.com
+                    
+
+Clicar no botao "Create an account"
+    Click Element      id=SubmitCreate
+
+
+Preencher os campos de dados pessoais: "${NOME}", "${SOBRENOME}", "${SENHA}" 
+    Wait Until Element Is Visible       id=account-creation_form
+    Click Element                       id=id_gender1                   
+    Input Text                          id=customer_firstname          ${NOME}
+    Input Text                          id=customer_lastname           ${SOBRENOME}
+    Input Text                          id=passwd                      ${SENHA}
+    
+Preencher os campos do endereco: "${ENDERECO}", "${CIDADE}", "Arizona", "${CODIGOPOSTAL}", "United States", "${CELULAR}"
+    Input Text                          id=address1                     ${ENDERECO}
+    Input Text                          id=city                         ${CIDADE}
+    Set Focus To Element                id=id_state             
+    Select From List By Index           id=id_state                     9
+    Input Text                          id=postcode                     ${CODIGOPOSTAL}
+    Set Focus To Element                id=id_country
+    Select From List By Index           id=id_country                   1
+    Input Text                          id=phone_mobile                 ${CELULAR}
+
+Clicar em "Register" para finalizar o cadastro
+    Click Element                       id=submitAccount
